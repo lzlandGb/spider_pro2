@@ -18,7 +18,7 @@ def use_actionchains():
 
     # 模拟鼠标进行操作
     option_elem = driver.find_element_by_link_text('设置')
-    ActionChains(driver).move_to_element(option_elem).perform() # 鼠标停留
+    ActionChains(driver).move_to_element(option_elem).perform() # 鼠标悬浮停留
     ActionChains(driver).move_to_element(option_elem).move_to_element() # 鼠标拖放
     ActionChains(driver).move_to_element(option_elem).context_click() # 鼠标单击
     ActionChains(driver).move_to_element(option_elem).double_click() # 鼠标双击
